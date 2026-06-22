@@ -1,3 +1,11 @@
 {
-    "js/ts.tsdk.path": "node_modules\\typescript\\lib"
+    "js/ts.tsdk.path": "node_modules\\typescript\\lib",
+
+    // Este projeto usa @rocketseat/eslint-config (ESLint), nao Biome.
+    // Sobrescreve o formatador global (Biome) para evitar conflito ao salvar.
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+    "editor.formatOnSave": false,
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": "always"
+    }
 }
