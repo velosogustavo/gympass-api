@@ -8,7 +8,9 @@
     "start": "node build/server.js",
     "build": "tsup src --out-dir build --format esm",
     "lint": "eslint src --ext .ts",
-    "lint:fix": "eslint src --ext .ts --fix"
+    "lint:fix": "eslint src --ext .ts --fix",
+    "test": "vitest run",
+    "test:watch": "vitest"
   },
   "repository": {
     "type": "git",
@@ -29,7 +31,9 @@
     "prisma": "4.10.1",
     "tsup": "8.5.1",
     "tsx": "4.22.4",
-    "typescript": "6.0.3"
+    "typescript": "6.0.3",
+    "vite-tsconfig-paths": "6.1.1",
+    "vitest": "4.1.9"
   },
   "dependencies": {
     "@prisma/client": "4.10.1",
