@@ -20,7 +20,7 @@ describe('Get User Profile Use Case', () => {
     })
 
     const { user } = await sut.execute({
-      userdId: CreatedUser.id,
+      userId: CreatedUser.id,
     })
 
     expect(user.name).toEqual('John Doe')
@@ -29,7 +29,7 @@ describe('Get User Profile Use Case', () => {
   it('should not be able to get user profile with wrong id', async () => {
     await expect(() =>
       sut.execute({
-        userdId: 'non-existing-id',
+        userId: 'non-existing-id',
       }),
     ).rejects.toBeInstanceOf(ResourceNotFoundError)
   })
