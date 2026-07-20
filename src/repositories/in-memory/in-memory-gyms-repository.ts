@@ -5,7 +5,7 @@ import type {
   GymsRepository,
 } from '../gyms-repository.js'
 import { randomUUID } from 'node:crypto'
-import { getDistanceBetweenCoordinates } from '@/use-cases/utils/get-distance-between-coordinates.js'
+import { getDistanceBetweenCoordinates } from '@/utils/get-distance-between-coordinates.js'
 
 export class InMemoryGymsRepository implements GymsRepository {
   public items: Gym[] = []
